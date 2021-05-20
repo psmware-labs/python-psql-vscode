@@ -1,0 +1,62 @@
+#  SPDX-License-Identifier: AGPL-3.0-only
+
+#  Copyright (C) 2020-2021  Patrick McLean - psmware ltd
+
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Affero General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Affero General Public License for more details.
+version: '3'
+
+services:
+  seal-app:
+    image: seal-app
+    container_name: seal-app
+    hostname: seal-app
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile.app
+    user: vscode
+    volumes:
+      - ~/.ssh:/home/vscode/.ssh:ro
+      - ~/.gnupg:/home/vscode/.gnupg:cached
+      - ..:/app:cached
+    ports:
+      - 0.0.0.0:5000:5000
+    env_file:
+      - devcontainer.env
+    depends_on:
+      - template-db
+
+    command: sleep infinity
+
+  template-db:
+    image: template-db
+    container_name: template-db
+    hostname: template-db
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile.db
+    ports:
+      - 5432:5432
+    env_file:
+      - devcontainer.env
+
+  seal-dbadmin:
+    image: seal-dbadmin
+    container_name: seal-dbadmin
+    hostname: seal-dbadmin
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile.dbadmin
+    ports:
+      - 0.0.0.0:5150:80
+    env_file:
+      - devcontainer.env
+    depends_on:
+      - template-db

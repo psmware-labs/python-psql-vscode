@@ -1,0 +1,40 @@
+site_name: psmware labs Python/PostgreSQL Template Project
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings
+  - git-committers
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+      minify_js: false
+      htmlmin_opts:
+          remove_comments: true
+  - mermaid2
+  # - with-pdf:
+  #     author: Pat McLean
+  #     copyright: psmware ltd
+  #     cover_subtitle: My little lab for testing mkdocs
+  #     toc_level: 2
+
+markdown_extensions:
+  - attr_list
+  - toc
+
+nav:
+  - Installation of the Development Environment:
+      - Prerequisites: prerequisites.md
+      - Install Ubuntu on Windows: ubuntu.md
+      - SSH on Ubuntu/GitHub: ssh-on-ubuntu.md
+      - GPG on Ubuntu/GitHub: gpg-on-ubuntu.md
+      - Git on Ubuntu: gpg-and-git.md
+      - Visual Studio Code: vscode.md
+      - Docker Desktop: docker-dekstop.md
+  - Using the Template:
+      - A New repository from the Template: using-the-template.md
+      - Cloning the Repository: cloning-the-repo.md
+      - Configuring project for 1st run: first-run.md
+      - Using the New Repository: using-the-new-repo.md
