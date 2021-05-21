@@ -1,6 +1,6 @@
 ## Installing GPG
 
-Using GPG, you sign tags and commits locally. These tags or commits are marked as verified on GitHub so other people in the Team can trust that the changes come from a trusted source. VSO DevOps require commit signing for all code, as per the GitHub policy, otherwise code will be rejected for inclusion.
+Using GPG, you sign tags and commits locally. These tags or commits are marked as verified on GitHub so other people in the Team can trust that the changes come from a trusted source. I suggest commit signing for all code.
 
 ## Installation Steps
 

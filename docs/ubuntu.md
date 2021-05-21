@@ -60,41 +60,41 @@ You can check the WSL version assigned to each of the Linux distributions you ha
 If you are running the un-numbered version of Ubuntu you will see
 
 ```powershell
-PS C:\Users\devops-vso\> wsl -l -v
+PS C:\Users\devops-pc\> wsl -l -v
  NAME               STATE          VERSION
  Ubuntu             Running         2
-PS C:\Users\devops-vso\>
+PS C:\Users\devops-pc\>
 ```
 
 For Ubuntu 18.04
 
 ```powershell
-PS C:\Users\devops-vso\> wsl -l -v
+PS C:\Users\devops-pc\> wsl -l -v
  NAME               STATE          VERSION
  Ubuntu-18.04       Running         2
-PS C:\Users\devops-vso\>
+PS C:\Users\devops-pc\>
 ```
 
 For Ubuntu 20.04
 
 ```powershell
-PS C:\Users\devops-vso\> wsl -l -v
+PS C:\Users\devops-pc\> wsl -l -v
  NAME               STATE          VERSION
  Ubuntu-20.04       Running         2
-PS C:\Users\devops-vso\>
+PS C:\Users\devops-pc\>
 ```
 
 If your Version shows up as `1`, set the distribution to be backed by `WSL2`, so please run:
 
 ```powershell
-PS C:\Users\devops-vso\> wsl --set-version Ubuntu 2       # If you have the Ubuntu un-numbered
-PS C:\Users\devops-vso\> wsl --set-version Ubuntu-18.04 2 # If you have the Ubuntu 18.04
-PS C:\Users\devops-vso\> wsl --set-version Ubuntu-20.04 2 # If you have the Ubuntu 20.04
+PS C:\Users\devops-pc\> wsl --set-version Ubuntu 2       # If you have the Ubuntu un-numbered
+PS C:\Users\devops-pc\> wsl --set-version Ubuntu-18.04 2 # If you have the Ubuntu 18.04
+PS C:\Users\devops-pc\> wsl --set-version Ubuntu-20.04 2 # If you have the Ubuntu 20.04
 Conversion in progress, this may take a few minutes...
 For information on key differences with WSL 2 please visit https://aka.ms/wsl2
 Conversion complete.
-PS C:\Users\devops-vso\> wsl -l -v
+PS C:\Users\devops-pc\> wsl -l -v
  NAME               STATE          VERSION
  Ubuntu-20.04       Running         2
-PS C:\Users\devops-vso\>
+PS C:\Users\devops-pc\>
 ```

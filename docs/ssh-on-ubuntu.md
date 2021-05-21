@@ -52,7 +52,7 @@ In the **Title** field, add a descriptive label for the new key. For example, if
 
 To copy the SSH public key for addition to GitHub run the following on your OS
 
-In the Ubuntu Terminal on Windows, and at the prompt type the following: `cat ~/.vso/id\_vso.pub`
+In the Ubuntu Terminal on Windows, and at the prompt type the following: `cat ~/.ssh/id_rsa.pub`
 
 Copy the resultant output in its entirety, including email address. Do NOT add line-breaks manually.
 

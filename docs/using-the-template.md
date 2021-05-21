@@ -4,7 +4,7 @@ You can create a new repository on your personal account or in the organization 
 
 ![New Repository](img/repo-create.png)
 
-2. Use the **Choose a template** drop-down and select the `domain/vso.python` template repository.
+2. Use the **Choose a template** drop-down and select the `psmware-labs/python-psql-vscode` template repository.
 
 ![Chose template](img/repo-template.png)
 

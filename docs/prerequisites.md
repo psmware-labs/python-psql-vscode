@@ -54,7 +54,7 @@ After your nap, check and you will see that the update has completed, and that Y
 
 ## Install the Windows Subsystem for Linux
 
-Now we need to enable the &quot;Windows Subsystem for Linux&quot; optional feature, which is used by Docker to host the containers used by VSO.
+Now we need to enable the &quot;Windows Subsystem for Linux&quot; optional feature, which is used by Docker to host the containers used by VS Code.
 
 Open PowerShell as Administrator and run:
 

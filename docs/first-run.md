@@ -96,7 +96,7 @@ Compressing objects: 100% (8/8), done.
 Writing objects: 100% (8/8), 1.19 KiB | 1.19 MiB/s, done.
 Total 8 (delta 4), reused 0 (delta 0)
 remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-To github.com:vso-inc/seal.git
+To github.com:patmclean/seal.git
    c0302e8..55a708d  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
